@@ -62,7 +62,7 @@
     function not_Function() {
     document.getElementById("Not").innerHTML =! (20 > 10);
 }
-/*This would return "false".
+/*This would return "false".*/
 
 /*If you wanted a "double negative," 
 you would write the following in your JavaScript code:*/
