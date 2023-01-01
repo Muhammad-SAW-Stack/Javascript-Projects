@@ -73,7 +73,7 @@ function modulus_Operator() {
 var X = 5;
 //Tells the variable X(5) that it is to be incremented by 1.
 X++;
-//Print the variable X, after it's been incremented.
+//Prints the variable X, after it's been incremented.
 document.write(X);
 //Inserts a line break to separate the numbers.
 document.write("<br>");
@@ -81,7 +81,7 @@ document.write("<br>");
 var X = 5.25;
 //Tells the variable X(5.25) to decrement by 1.
 X--;
-//Print the variable X, after it's had the necessary decrement.
+//Prints the variable X, after it's had the necessary decrement.
 document.write(X);
 
 
