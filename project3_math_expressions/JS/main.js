@@ -84,5 +84,11 @@ X--;
 //Prints the variable X, after it's had the necessary decrement.
 document.write(X);
 
+//Two alert windows, each showing a different random number. 
+//The first random number will be between 0 and 1.
+//The second will be between 0 and 100.
+window.alert(Math.random());
+window.alert(Math.random() * 100);
+
 
 
