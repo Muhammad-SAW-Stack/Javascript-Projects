@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+    <!--Head-->
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width"/>
+        <title>Nick's Portfolio</title>
+        <script src="js/portfolio.js"></script>
+        <link rel="stylesheet" type="text/css" href="portfolio.css">
+       <br>
+        <Style type='text/css'></Style>
+    </head>
+
+    <!--Body-->
+    <body class="Background">
+        
+        <!--Navbar-->
+        <div class="Navbar">
+            <a class="active" href="#Home">Home</a>
+            <a href="#About">About</a>
+            <a href="#GitHub">GitHub</a>
+            <a href="#Contact">Contact</a>
+        </div>
+
+        <!--Breaks inserted to add space between navbar and the first heading-->
+        <br>
+        <br>
+
+        <!--Background video-->
+        <div id="Home">
+            <video autoplay muted loop id="Typing_Video">
+                <source src="images/video/Typing.mp4" type="video/mp4">
+                <!--Display message if video fails to run-->
+                Your browser does not support HTML5 video.
+            </video>
+        </div>
+
+        <!--Video text-->
+        <div class="Video_Text">
+            <h1 class="red-text"><u>Nick's Portfolio</u></h1>
+            <strong>
+                <p class="left">
+                    <h1><q>Whether you want to uncover the secrets of the universe, 
+                        <br>or you just want to pursue a career in the 21st century, 
+                        <br>basic computer programming is an essential skill to learn.</q>
+                            <br>-Stephen Hawking</h1>
+                </p>
+            </strong>
+        </div>
+        <div>
+
+        </div>
+        <!-- Slideshow section added -->
+        <div id="Slideshow">
+            <div id="Slideshow_Background"> 
+                <div id="Slideshow_Container">
+                    <!-- Slide 1 of 6 -->
+                    <div class="mySlides fade">
+                        <img class="Slideshow_Images" src="images/Picture_of_You.jpg">
+                        <div class="text">I'm available to assist you on your project!</div>
+                    </div>
+                    <!-- Slide 2 of 6 -->
+                    <div class="mySlides fade">
+                        <img class="Slideshow_Images" src="images/HTML_CSS_and_JavaScript.png"> 
+                        <div class="text">HTML, CSS, JavaScript,</div>
+                    </div>
+                    <!-- Slide 3 of 6 -->
+                    <div class="mySlides fade">
+                        <img class="Slideshow_Images" src="images/Python.png">
+                        <div class="text">the popular programming language Python,</div>
+                    </div>
+                    <!-- Slide 4 of 6 -->
+                    <div class="mySlides fade">
+                        <img class="Slideshow_Images" src="images/C_Sharp_and_Dot_NET.jpg">
+                        <div class="text">C#, .NET Framework, ASP.NET, MVC, </div>
+                    </div>
+                </div>
+                <!-- Previous and next buttons -->
+                <a class="Previous" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="Next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+            <br> <!-- Adds a space between the slideshow images and the dots -->
+
+            <!-- Slideshow dots (these are another way for users to navigate through the slideshow) -->
+            <div style="text-align: center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span> 
+                <span class="dot" onclick="currentSlide(4)"></span>
+            </div>
+        </div>
+    </div>
+        
+        <!--About section-->
+        <div class="Row" id="About">
+            <!--Left column-->
+            <div class="Column_2">  
+                <img src="images/Picture_of_You.jpg" alt="Replace with your own image and description">
+            </div>
+            <!--Right column-->
+            <div class="Column_1">
+                <h1><u>About</u></h1>
+                <p>
+                    My name is Nick, I am a software developer who loves to code! In my spare time, besides coding and video game development, I enjoy spending time with family and travelling. While on the job, I strive to be a hard working team member, who ensures communication is maintained within the team, as well as always following directions, and remaining focused on the tasks given. Besides the previously mentioned, I also work towards contributing to Diversity, Inclusion, and Equality for all. 
+                    <br>I am a graduate of <a href="https://www.learncodinganywhere.com" target="_blank">The Tech Academy</a>’s Software Developer Boot Camp, and trained and experienced in the following web and programming languages: HTML, CSS, JavaScript, SQL, C# and more.
+                    <br>I am a full-stack developer and would love to work with you on your project. <a href="#Contact">Contact</a> me below!
+                </p>
+            </div>
+        </div>
+
+        <!--GitHub section-->
+        <div class="Row" id="GitHub">
+            <!--Left column-->
+            <div class="Column_1">
+                <h1><u>GitHub</u></h1>
+                <p>
+                    You can view my coding projects on my GitHub profile here:
+                    <br>
+                    <p class="center"><a href="https://github.com/Muhammad-SAW-Stack/" target="_blank">Muhammad SAW Stack</a></p>
+                </p>
+            </div>
+            <!--Right column-->
+            <div class="Column_2">
+                <a href="https://github.com/the-tech-academy" target="_blank">
+                <img src="https://www.kindpng.com/picc/m/48-483237_github-logo-png-transparent-logo-github-png-png.png" alt="Github Logo Png - Transparent Logo Github Png, Png " alt="GitHub Logo"></a>
+            </div>
+        </div>
+
+        <!--Contact section-->
+        <div class="Row" id="Contact">
+            <!--Contact image, left column-->
+            <div class="Column_2 Column_tall">
+                <img src="https://i0.wp.com/www.jeffkram.com/wp-content/uploads/2019/02/contact-me-png-6.png?ssl=1" alt="Contact_Image">
+            </div>
+            <!--Contact form, right column-->
+            <div class="Column_1 Column_tall">
+                <h1><u>Contact</u></h1>
+                <!--This specifies where and how to send the form data; we are leaving it blank-->
+                <form action="https://formspree.io/f/mrgolqyv" method="POST">
+                    <label>Name:</label>
+                        <input type="text" placeholder="Please enter your name here">
+                    <div>
+
+                    </div>
+                        <label>Email:</label>
+                        <input type="text" id="Email" name="Email" placeholder="Please enter your email here">
+                    <div>
+                        
+                    </div>
+                        <label>Message:</label>
+                        <input type="text" id="Message" name="Message" placeholder="Please write your message here">
+                        <input type="submit" value="SUBMIT">
+                </form>
+            </div>
+        </div>
+
+        <!--Footer section-->
+        <footer>
+            <p>
+                <p class="center">&copy Prosper Consulting Inc., <a href="https://www.learncodinganywhere.com/" target="_blank">The Tech Academy</a></p>
+                <br>
+            </p>
+        </footer>
+    </body>
+<script>'undefined'=== typeof _trfq || (window._trfq = []);'undefined'=== typeof _trfd && (window._trfd=[]),_trfd.push({'tccl.baseHost':'secureserver.net'},{'ap':'cpsh'},{'server':'a2plcpnl0302'},{'dcenter':'a2'},{'id':'6828831'}) // Monitoring performance to make your website faster. If you want to opt-out, please contact web hosting support.</script><script src='https://img1.wsimg.com/traffic-assets/js/tccl.min.js'></script><script src='https://img1.wsimg.com/traffic-assets/js/tccl-tti.min.js' onload='window.tti.calculateTTI()'></script></html>
