@@ -58,3 +58,13 @@ let bag = { //Opens block statement
 };
 // 5 if fruit="apple"
 alert( bag.apple );
+
+function car_pics() {
+  var Car_Picture = [] ;
+  Car_Picture[0] = "parked";
+  Car_Picture[1] = "driving";
+  Car_Picture[2] = "hood up";
+  Car_Picture[3] = "burn out";
+  document.getElementById("Car").innerHTML = "In this picture, the car is " +
+    Car_Picture [1] + ".";
+}
